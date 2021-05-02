@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PasswordGenerator
 {
+    /**
+     * Static class to generate password.
+     */
     public static class PasswordGenerator
     {
         private const string LOWERCASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
