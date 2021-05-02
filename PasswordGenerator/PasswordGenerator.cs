@@ -26,7 +26,6 @@ namespace PasswordGenerator
             value += condition.DigitCount > 0 ? GetRandomString(condition.DigitCount, DIGIT_CHARACTERS) : "";
 
             return value.Shuffle();
-            //return System.Web.Security.Membership.GeneratePassword(10, 3);
         }
 
         private static string GetRandomString(int length, string charactors)
