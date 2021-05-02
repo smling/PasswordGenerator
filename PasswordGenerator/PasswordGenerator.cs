@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PasswordGenerator
 {
+    /**
+     * Static class to generate password.
+     */
     public static class PasswordGenerator
     {
         private const string LOWERCASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
@@ -26,7 +29,6 @@ namespace PasswordGenerator
             value += condition.DigitCount > 0 ? GetRandomString(condition.DigitCount, DIGIT_CHARACTERS) : "";
 
             return value.Shuffle();
-            //return System.Web.Security.Membership.GeneratePassword(10, 3);
         }
 
         private static string GetRandomString(int length, string charactors)
